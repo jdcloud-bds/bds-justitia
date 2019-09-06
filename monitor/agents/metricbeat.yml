@@ -1,0 +1,19 @@
+metricbeat.config.modules:
+  path: ${path.config}/modules.d/*.yml
+  reload.enabled: false
+
+setup.template:
+  name: "justitia-metrics-*"
+  pattern: "justitia-metrics-*"
+
+processors:
+- add_cloud_metadata:
+
+output.elasticsearch:
+  hosts: ['elasticsearch:9200']
+  username: elastic
+  password: changeme
+  index: "justitia-metrics-%{+yyyy.MM.dd}"
+
+#setup.kibana.host: "kibana:5601"
+#setup.dashboards.enabled: true

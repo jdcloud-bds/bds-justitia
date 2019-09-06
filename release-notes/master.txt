@@ -1,0 +1,19 @@
+# We use the BRANCH-MODEL as "develop on master, release on master",
+# so "master" branch contains the most updated, runnable code.
+
+# Dependencies are as follows:
+github.com/DSiSc/apigateway:master
+github.com/DSiSc/repository:master
+github.com/DSiSc/blockstore:master
+github.com/DSiSc/craft:master
+github.com/DSiSc/evm-NG:master
+github.com/DSiSc/galaxy:master
+github.com/DSiSc/gossipswitch:master
+github.com/DSiSc/producer:master
+github.com/DSiSc/statedb-NG:master
+github.com/DSiSc/txpool:master
+github.com/DSiSc/validator:master
+github.com/DSiSc/crypto-suite:master
+github.com/DSiSc/p2p:master
+github.com/DSiSc/syncer:master
+github.com/DSiSc/contractsManage:master
